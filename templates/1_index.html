@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html>
+<head>
+    <title> Home page </title>
+    <body>
+        <h1> Home page </h1>
+        <p> {{content}} </p>
+        <p> {{r}} </p>
+        {% for x in range(0, 10) %}
+            {% if x % 2 == 1%}
+            <p> {{x}} </p>
+            {% endif %}
+        {% endfor %}
+    </body>
+
+    {% for y in content_2 %}
+    <p> {{y}}</p>
+    {% endfor %}
+</head>
+</html>
